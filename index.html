@@ -658,44 +658,5 @@ $( "#btn-inicio" ).hover(
   }
 );
 </script>
-<script src="http://malsup.github.com/jquery.form.js"></script>
-<script>
-$(document).ready(function()
-{
-	var options = {
-		beforeSend: function()
-		{
-			$(".mensaje").html("");
-			$(".mensaje").html('<img src="assets/images/ajax-loader.gif"> Espere... ');
-		},
-		uploadProgress: function(event, position, total, percentComplete)
-		{
-			$(".mensaje").html("");
-			$(".mensaje").html('<img src="assets/images/ajax-loader.gif"> Espere... ');
-		},
-		complete: function(response)
-		{
-			$(".mensaje").html('<span style="color: #53ef76;"><i class="fa fa-check"></i> Mensaje</br>Enviado</span>');
-		},
-		success: function(data)
-		{
-			data=data.trim();
-			if(data=="ok")
-			{
-			
-				$(".mensaje").html('<span style="color: #53ef76;"><i class="fa fa-check"></i> Mensaje</br>Enviado</span>');
-			}
-			else
-			{
-			}
-		},
-		error: function()
-		{
-			
-		}
-	};
-	$("#form").ajaxForm(options);
-});
 
-</script>
 </html>
