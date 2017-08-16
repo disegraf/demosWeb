@@ -92,7 +92,7 @@
 .bold{font-weight:700}
 .regular{font-weight:400}
 .light,.hairline{font-weight:lighter}
-.big{font-size:36px;line-height:48px}
+.big{font-size:36px;line-height:48px; font-weight:normal}
 .bigger{font-size:48px;line-height:1.2}
 .super{font-size:60px;line-height:1.2;margin-bottom:0}
 .super small{font-size:.35em}
@@ -191,12 +191,8 @@
 .menu .pull-right>li>.dropdown-menu .dropdown-menu,.menu .nav>li>.dropdown-menu.pull-right .dropdown-menu{left:100%;right:auto}
 .menu .dropdown-menu .divider{margin:0}
 
-.menu-header{background:#000;
-  filter: alpha(opacity=60);
-  /* IE */
-  -moz-opacity: 0.6;
-  /* Mozilla */
-  opacity: 0.6;
+.menu-header{
+	background: rgba(0, 0, 0, 0.6);
 }
 .menu-icon{font-size:.8em;width:1em;margin-right:3px;transition:background .1s;color:inherit}
 .menu-label{position:relative;top:-2px;transition:all .2s;margin-left:24px}
